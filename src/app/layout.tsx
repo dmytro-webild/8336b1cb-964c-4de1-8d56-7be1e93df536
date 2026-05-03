@@ -8,6 +8,7 @@ import Tag from "@/tag/Tag";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Roboto } from "next/font/google";
 import { Poppins } from "next/font/google";
+import { Figtree } from "next/font/google";
 
 
 
@@ -23,10 +24,10 @@ export const metadata: Metadata = {
 };
 
 
-const poppins = Poppins({
-  variable: "--font-poppins",
+
+const figtree = Figtree({
+  variable: "--font-figtree",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function RootLayout({
@@ -37,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${poppins.variable} antialiased`}>
+        <body className={`${figtree.variable} antialiased`}>
           <Tag />
           {children}
           <script
