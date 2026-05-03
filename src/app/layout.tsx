@@ -7,6 +7,7 @@ import { ServiceWrapper } from "@/components/ServiceWrapper";
 import Tag from "@/tag/Tag";
 import { getVisualEditScript } from "@/utils/visual-edit-script";
 import { Roboto } from "next/font/google";
+import { Poppins } from "next/font/google";
 
 
 
@@ -21,10 +22,11 @@ export const metadata: Metadata = {
   },
 };
 
-const roboto = Roboto({
-  variable: "--font-roboto",
+
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export default function RootLayout({
@@ -35,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body className={`${roboto.variable} antialiased`}>
+        <body className={`${poppins.variable} antialiased`}>
           <Tag />
           {children}
           <script
