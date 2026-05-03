@@ -70,7 +70,7 @@ export default function LandingPage() {
           href: "#contact",
         },
       ]}
-      imageSrc="http://img.b2bpic.net/free-photo/spacious-room-with-big-window_1203-1490.jpg"
+      imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3DDwzqjxeS2xLVBfYFHPXBY9S7H/uploaded-1777830741581-titnb8y0.jpg"
       imageAlt="Beyoğlu Suites Hotel exterior at night"
       mediaAnimation="slide-up"
       avatars={[
